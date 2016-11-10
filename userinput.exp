@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+
+spawn "./test.bash"
+
+expect "Username for 'https://github.com': "
+send "markyyboyy\r"
+expect "Password for 'https://markyyboyy@github.com': "
+send "Bubbs24iefi\r"
+interact
